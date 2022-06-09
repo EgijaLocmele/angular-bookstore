@@ -8,6 +8,4 @@ import { Product } from '../../product';
 })
 export class ProductListComponent {
   products: Product[] = ProductData;
-
-  constructor() {}
 }

@@ -5,6 +5,4 @@ import { Component } from '@angular/core';
   templateUrl: './navigation.component.html',
   styleUrls: ['./navigation.component.sass'],
 })
-export class NavigationComponent {
-  constructor() {}
-}
+export class NavigationComponent {}

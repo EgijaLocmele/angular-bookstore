@@ -8,6 +8,4 @@ import { Product } from '../../product';
 })
 export class ProductListItemComponent {
   @Input() product!: Product;
-
-  constructor() {}
 }
