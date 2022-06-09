@@ -8,6 +8,8 @@
           : product.title
       }}
     </p>
-    <p class="product-item__text-price">${{ product.price }}</p>
+    <p class="product-item__text-price">
+      {{ product.price | currency }}
+    </p>
   </div>
 </div>
