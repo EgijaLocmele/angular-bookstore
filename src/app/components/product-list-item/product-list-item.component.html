@@ -1,0 +1,15 @@
+<div class="product-item">
+  <img src="{{ product.image }}" alt="Book cover" class="product-item__image" />
+  <div class="product-item__text">
+    <p class="product-item__text-title" [title]="product.title">
+      {{
+        product.title.length > 50
+          ? (product.title | slice: 0:50) + "..."
+          : product.title
+      }}
+    </p>
+    <p class="product-item__text-price">
+      {{ product.price | currency }}
+    </p>
+  </div>
+</div>
