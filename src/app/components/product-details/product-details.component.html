@@ -1,0 +1,36 @@
+<div class="product-details">
+  <h2 class="product-details__title">
+    {{ product.title }}
+  </h2>
+  <img
+    class="product-details__image"
+    src="{{ product.image }}"
+    alt="Book alt"
+  />
+  <p class="product-details__description">
+    {{ product.description }}
+  </p>
+  <div class="product-details__container">
+    <div>
+      <label for="amount" class="product-details__container__amount"
+        >Amount:</label
+      >
+      <input
+        class="product-details__container__amount-count"
+        id="bookAmount"
+        name="amount"
+        max="10"
+        min="1"
+        type="number"
+        value="1"
+      />
+    </div>
+
+    <p class="product-details__container__price" variant="large">
+      {{ 39.99 | currency }}
+    </p>
+  </div>
+  <button class="product-details__button" (click)="openDialog()">
+    {{ addButton }}
+  </button>
+</div>

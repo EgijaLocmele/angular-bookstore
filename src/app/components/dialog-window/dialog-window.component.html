@@ -1,0 +1,17 @@
+<div mat-dialog-actions class="dialog-window">
+  <div class="dialog-window--log">
+    <button class="dialog-window__close" mat-dialog-close>
+      <img
+        src="assets/close.svg"
+        alt="Closing icon"
+        class="dialog-window__close-icon"
+      />
+    </button>
+  </div>
+  <div>
+    <button class="dialog-window__button">{{ toCart }}</button>
+    <button class="dialog-window__button" mat-dialog-close>
+      {{ continueShopping }}
+    </button>
+  </div>
+</div>
