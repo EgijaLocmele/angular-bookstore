@@ -10,7 +10,9 @@
       <p class="cart__container__label">Total cost:</p>
       <p class="cart__container__price">{{ 119.97 | currency }}</p>
     </div>
-    <button class="cart__checkout">{{ checkoutButton }}</button>
+    <button class="cart__checkout" routerLink="/checkout">
+      {{ checkoutButton }}
+    </button>
   </div>
 </div>
 

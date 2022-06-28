@@ -16,5 +16,5 @@ export class CartComponent {
     this.location.back();
   }
 
-  displayContent = false;
+  displayContent = true;
 }

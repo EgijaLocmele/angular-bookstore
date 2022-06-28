@@ -13,6 +13,9 @@ import { ProductDetailsComponent } from './components/product-details/product-de
 import { DialogWindowComponent } from './components/dialog-window/dialog-window.component';
 import { CartComponent } from './components/cart/cart.component';
 import { CartItemComponent } from './components/cart-item/cart-item.component';
+import { CheckoutComponent } from './components/checkout/checkout.component';
+import { CheckoutItemComponent } from './components/checkout-item/checkout-item.component';
+import { FormComponent } from './components/form/form.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +27,9 @@ import { CartItemComponent } from './components/cart-item/cart-item.component';
     DialogWindowComponent,
     CartComponent,
     CartItemComponent,
+    CheckoutComponent,
+    CheckoutItemComponent,
+    FormComponent,
   ],
   imports: [
     BrowserModule,
@@ -33,6 +39,7 @@ import { CartItemComponent } from './components/cart-item/cart-item.component';
       { path: '', component: ProductListComponent },
       { path: 'products/:id', component: ProductDetailsComponent },
       { path: 'cart', component: CartComponent },
+      { path: 'checkout', component: CheckoutComponent },
     ]),
     MatDialogModule,
   ],
