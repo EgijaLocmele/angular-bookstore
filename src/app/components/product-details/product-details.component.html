@@ -27,7 +27,7 @@
     </div>
 
     <p class="product-details__container__price" variant="large">
-      {{ 39.99 | currency }}
+      {{ product.price | currency }}
     </p>
   </div>
   <button class="product-details__button" (click)="openDialog()">

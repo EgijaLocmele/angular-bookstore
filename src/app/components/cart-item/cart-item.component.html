@@ -1,12 +1,16 @@
 <div class="cart-item">
-  <img class="cart-item__image" src="../../assets/book_image1.png" alt="" />
+  <img class="cart-item__image" src="{{ product.image }}" alt="Book cover" />
   <div class="cart-item__container-bigger">
     <div class="cart-item__container">
-      <h4 class="cart-item__title">Title title</h4>
-      <img class="cart-item__delete-icon" src="../../assets/close.svg" alt="" />
+      <h4 class="cart-item__title">{{ product.title }}</h4>
+      <img
+        class="cart-item__delete-icon"
+        src="assets/close.svg"
+        alt="Close icon"
+      />
     </div>
     <div class="cart-item__container">
-      <p class="cart-item__price">39.99$</p>
+      <p class="cart-item__price">{{ product.price | currency }}</p>
       <input
         class="cart-item__amount"
         id="bookAmount"
