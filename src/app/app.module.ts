@@ -11,6 +11,8 @@ import { ProductListComponent } from './components/product-list/product-list.com
 import { ProductListItemComponent } from './components/product-list-item/product-list-item.component';
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
 import { DialogWindowComponent } from './components/dialog-window/dialog-window.component';
+import { CartComponent } from './components/cart/cart.component';
+import { CartItemComponent } from './components/cart-item/cart-item.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,8 @@ import { DialogWindowComponent } from './components/dialog-window/dialog-window.
     ProductListItemComponent,
     ProductDetailsComponent,
     DialogWindowComponent,
+    CartComponent,
+    CartItemComponent,
   ],
   imports: [
     BrowserModule,
@@ -28,6 +32,7 @@ import { DialogWindowComponent } from './components/dialog-window/dialog-window.
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
       { path: 'products/:id', component: ProductDetailsComponent },
+      { path: 'cart', component: CartComponent },
     ]),
     MatDialogModule,
   ],

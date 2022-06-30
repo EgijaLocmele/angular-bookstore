@@ -9,7 +9,9 @@
     </button>
   </div>
   <div>
-    <button class="dialog-window__button">{{ toCart }}</button>
+    <button class="dialog-window__button" routerLink="/cart" mat-dialog-close>
+      {{ toCart }}
+    </button>
     <button class="dialog-window__button" mat-dialog-close>
       {{ continueShopping }}
     </button>

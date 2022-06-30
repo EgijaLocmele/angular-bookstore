@@ -1,0 +1,19 @@
+<div class="cart">
+  <div *ngIf="displayContent; else errorMessage">
+    <button class="cart__back-button" (click)="goBack()">
+      <img src="assets/left-arrow.svg" alt="Left back arrow" />
+    </button>
+    <div class="cart__items">
+      <app-cart-item></app-cart-item>
+    </div>
+    <div class="cart__container">
+      <p class="cart__container__label">Total cost:</p>
+      <p class="cart__container__price">{{ 119.97 | currency }}</p>
+    </div>
+    <button class="cart__checkout">{{ checkoutButton }}</button>
+  </div>
+</div>
+
+<ng-template #errorMessage>
+  <h2 class="cart__empty">Cart is empty!</h2>
+</ng-template>
