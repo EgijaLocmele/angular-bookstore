@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-checkout',
@@ -7,8 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CheckoutComponent implements OnInit {
   public orderButton: string;
-  constructor() {
+  constructor(private location: Location) {
     this.orderButton = 'Order';
+  }
+
+  goBack(): void {
+    this.location.back();
   }
 
   ngOnInit(): void {}

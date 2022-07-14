@@ -1,11 +1,11 @@
 <div class="checkout">
+  <button class="checkout__back-button" (click)="goBack()">
+    <img src="assets/left-arrow.svg" alt="Left back arrow" />
+  </button>
   <app-checkout-item></app-checkout-item>
   <div class="checkout__container">
     <p class="checkout__container__label">Total cost:</p>
     <p class="checkout__container__price">{{ 119.97 | currency }}</p>
   </div>
   <app-form></app-form>
-  <button class="checkout__order">
-    {{ orderButton }}
-  </button>
 </div>
